@@ -1,12 +1,10 @@
-import type { NextPage } from 'next';
-import Image from 'next/image';
+import React from 'react';
+import { Htag } from '../components';
 
-const Home: NextPage = () => {
+export default function Home(): JSX.Element {
 	return (
-		<div>
-			fhgfjhj
-		</div>
+		<>
+			<Htag tag='h1'>Текст</Htag>
+		</>
 	);
-};
-
-export default Home;
+}
