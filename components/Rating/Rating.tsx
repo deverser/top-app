@@ -10,6 +10,7 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
 	useEffect(() => {
 		constructRating(rating);
 	}, [rating]);
+
 	const constructRating = (currentRating: number) => {
 		const updatedArray = ratingArray.map((r: JSX.Element, i: number) => {
 			return (
@@ -24,7 +25,7 @@ export const Rating = ({ isEditable = false, rating, setRating, ...props }: Rati
 	};
 	return (
 		<div {...props}>
-			{ratingArray.map((r, i) => { <span key={i}>{r}</span> })}
+			{ratingArray.map((r, i) => (<span key={i}>{r}</span>))}
 		</div>
 	);
 };
