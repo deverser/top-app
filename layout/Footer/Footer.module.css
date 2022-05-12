@@ -1,0 +1,39 @@
+.footer {
+	padding: 25px 32px;
+	background: var(--primary);
+	color: var(--white);
+	font-size: 16px;
+	line-height: 20px;
+
+	display: grid;
+	grid-template-columns: 1fr auto auto;
+	gap: 10px 40px;
+	grid-template-areas:
+		"copyright agreement policy"
+}
+
+.footer a:hover {
+	color: var(--gray-light)
+}
+
+.copyright {
+	grid-area: copyright;
+}
+
+.agreement {
+	grid-area: agreement;
+}
+
+.policy {
+	grid-area: policy;
+}
+
+@media screen and (max-width: 765px) {
+	.footer {
+		grid-template-columns: 1fr;
+		grid-template-areas:
+			"agreement"
+			"policy"
+			"copyright";
+	}
+}
