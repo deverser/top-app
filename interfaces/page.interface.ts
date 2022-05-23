@@ -20,28 +20,6 @@ export interface HhData {
 	_id: string;
 }
 
-export interface Blog {
-	h1: string;
-	metaTitle: string;
-	metaDescription: string;
-	views: number;
-	_id: string;
-}
-
-export interface Sravnikus {
-	metaTitle: string;
-	metaDescription: string;
-	qas: any[];
-	_id: string;
-}
-
-export interface Learningclub {
-	metaTitle: string;
-	metaDescription: string;
-	qas: any[];
-	_id: string;
-}
-
 export interface TopPageModel {
 	_id: string;
 	tags: string[];
@@ -53,16 +31,9 @@ export interface TopPageModel {
 	tagsTitle: string;
 	metaTitle: string;
 	metaDescription: string;
-	firstCategory: number;
+	firstCategory: TopLevelCategory;
 	advantages: TopPageAdvantage[];
 	createdAt: Date;
 	updatedAt: Date;
-	__v: number;
 	hh: HhData;
-	qas: any[];
-	addresses: any[];
-	categoryOn: string;
-	blog: Blog;
-	sravnikus: Sravnikus;
-	learningclub: Learningclub;
 }
