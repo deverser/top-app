@@ -21,6 +21,7 @@ export const TopPageComponent = ({ page, products, firstCategory }: TopPageCompo
 			</div>
 			{firstCategory == TopLevelCategory.Courses && <HhData {...page.hh} />}
 			<Htag tag='h2'>Преимущества</Htag>
+			<Advantages advantages={page.advantages} />
 		</div>
 	);
 }; 
