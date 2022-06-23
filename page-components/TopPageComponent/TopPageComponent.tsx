@@ -19,6 +19,12 @@ export const TopPageComponent = ({ page, products, firstCategory }: TopPageCompo
 				<Tag color='red' size='m'>hh.ru</Tag>
 			</div>
 			{firstCategory == TopLevelCategory.Courses && <HhData {...page.hh} />}
+			<div className={styles.advantages}>
+				<Htag tag='h2'>Преимущества</Htag>
+				<div className={styles.advantagesList}>
+					{page.advantages}
+				</div>
+			</div>
 		</div>
 	);
 }; 

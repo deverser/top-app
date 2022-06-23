@@ -17,3 +17,13 @@
 	justify-items: left;
 	gap: 20px;
 }
+
+.advantages {
+	margin-top: 45px;
+}
+
+.advantagesList {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 40px;
+}
