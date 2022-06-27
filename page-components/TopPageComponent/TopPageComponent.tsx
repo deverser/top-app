@@ -26,7 +26,8 @@ export const TopPageComponent = ({ page, products, firstCategory }: TopPageCompo
 					<Advantages advantages={page.advantages} />
 				</>}
 			{page.seoText && <P>{page.seoText}</P>}
-
+			<Htag tag='h2'>Получаемые навыки</Htag>
+			{page.tags && page.tags.map(t => <Tag key={t} color='primary'>{t}</Tag>)}
 		</div>
 	);
 }; 
