@@ -3,17 +3,14 @@
 	grid-template-columns: 50px 1fr;
 	gap: 10px 40px;
 	align-items: center;
+	margin-bottom: 30px;
 }
 
 .vline {
-	border-left: 1px solid var(--gray-light);
-	height: 50%;
+	border-left: 1px solid #D2D2D2;
+	height: 100%;
 }
 
 .title {
-	font-weight: 700;
-	font-size: 20px;
-	line-height: 27px;
-
-	color: var(--black);
+	font-weight: bold;
 }

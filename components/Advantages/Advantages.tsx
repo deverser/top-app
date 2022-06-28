@@ -1,8 +1,6 @@
-import cn from 'classnames';
 import React from 'react';
 import { AdvantagesProps } from './Advantages.props';
 import styles from './Advantages.module.css';
-import { Htag } from '../Htag/Htag';
 import CheckIcon from './check.svg';
 
 
