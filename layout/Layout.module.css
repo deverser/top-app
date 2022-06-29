@@ -21,7 +21,6 @@
 
 .body {
 	grid-area: body;
-	padding: 15px;
 }
 
 .footer {
@@ -29,6 +28,10 @@
 }
 
 @media screen and (max-width: 765px) {
+	.body {
+		padding: 15px;
+	}
+
 	.sidebar {
 		display: none !important;
 	}
