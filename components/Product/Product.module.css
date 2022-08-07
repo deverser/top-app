@@ -43,3 +43,34 @@
 .advBlock {
 	grid-column: middle / end;
 }
+
+.logo img {
+	border-radius: 5px;
+}
+
+.title {
+	font-weight: 600;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.price,
+.credit {
+	font-weight: 400;
+	font-size: 20px;
+	line-height: 27px;
+}
+
+.priceTitle,
+.creditTitle,
+.rateTitle {
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 19px;
+}
+
+.description {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+}
