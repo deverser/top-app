@@ -118,3 +118,25 @@
 .reviewButton {
 	margin-left: 20px;
 }
+
+.characteristics {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	gap: 10px;
+	margin-right: 60px;
+	font-size: 16px;
+}
+
+.characteristicsName {
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.characteristicsDots {
+	border-bottom: 1px dotted var(--gray-light);
+}
+
+.characteristicsValue {
+	font-weight: 500;
+	line-height: 22px;
+}
