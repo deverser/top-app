@@ -10,6 +10,7 @@ import { Divider } from '../Divider/Divider';
 import Image from 'next/image';
 import { useState } from 'react';
 import { Review } from '../Review/Review';
+import { ReviewForm } from '../ReviewForm/ReviewForm';
 
 export const Product = ({ product, className, ...props }: ProductProps): JSX.Element => {
 	const [isReviewOpened, setIsReviewOpened] = useState<boolean>(false);
@@ -80,6 +81,7 @@ export const Product = ({ product, className, ...props }: ProductProps): JSX.Ele
 						<Divider />
 					</>
 				))}
+				<ReviewForm productId={product._id} />
 			</Card>
 		</>);
 }; 
